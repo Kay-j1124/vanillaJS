@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chrome App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Titan+One&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="main__inner">
+        <h1 id="js-greeting" class="is-hidden">
+          <span id="js-greetingByTime">Hello</span>
+          <span id="js-greetingTheUser">user</span>
+        </h1>
+        <div class="geo" id="geo">
+          <div class="geo__inner">
+            <p class="-title">Today's weather</p>
+            <span class="city" id="city"></span>
+            <div class="geo__weather">
+              <span class="-icon" id="weatherIcon"></span>
+              <span class="-text" id="weather"></span>
+            </div>
+            <span class="temperature" id="temperature"></span>
+          </div>
+        </div>
+        <div class="clock" id="js-clock">
+          <span>00:00:00</span>
+        </div>
+        <div class="greeting">
+          <form id="js-loginForm" class="is-hidden">
+            <input type="text" placeholder="Please Enter Your Name" maxlength="15" required />
+            <button type="submit">Log In</button>
+          </form>
+        </div>
+        <form class="todo__form" id="js-todoForm">
+          <input type="text" placeholder="Write a To Do and Press Enter" required />
+        </form>
+        <div class="todo">
+          <div class="todo__inner">
+            <div class="todo__list">
+              <p class="-title">- Your To Do List -</p>
+              <ul class="todo__list" id="js-todoList"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./src/js/time.js"></script>
+    <script src="./src/js/user.js"></script>
+    <script src="./src/js/background.js"></script>
+    <script src="./src/js/todo.js"></script>
+    <script src="./src/js/weather.js"></script>
+  </body>
+</html>
