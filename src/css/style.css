@@ -9,6 +9,7 @@ main {
   justify-content: center;
   align-items: center;
   font-family: "Titan One", cursive;
+  transition: background 1s;
 }
 
 .is-hidden {

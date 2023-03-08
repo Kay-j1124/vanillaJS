@@ -4,14 +4,12 @@ const greetingByTime = document.querySelector("#js-greetingByTime");
 
 const changingClass = (timeClass) => {
   if (!body.classList.contains(timeClass)) {
+    body.className = "";
     body.classList.add(timeClass);
   }
 }
 const chagingGreeting = (greeting) => {
-  if (!greetingByTime.classList.contains("is-active")) {
-    greetingByTime.classList.add("is-active");
-    greetingByTime.innerText = greeting;
-  }
+  greetingByTime.innerText = greeting;
 }
 const setClock = () => {
   const date = new Date();
